@@ -1,9 +1,12 @@
 document.querySelector("#btnClick").addEventListener("click", changeLogo)
 
+const maxWordLength = 7
+const googleLogo = document.querySelector("#googleLogo").childElementCount
+const searchInput = document.querySelector(".main_search")
 function changeLogo() {
 
-   document.querySelector("#googleLogo").childElementCount > 7 ?
-      document.querySelector(".main_search").firstElementChild.innerHTML = `
+   googleLogo > maxWordLength ?
+      searchInput.firstElementChild.innerHTML = `
       <span id="G">G</span>
       <span id="o">o</span>
       <span id="oo">o</span>
@@ -11,7 +14,7 @@ function changeLogo() {
       <span id="l">l</span>
       <span id="o">e</span>
    `:
-      document.querySelector(".main_search").firstElementChild.innerHTML = `
+      searchInput.firstElementChild.innerHTML = `
       <span>I</span>
       <span>L</span>
       <span>M</span>
