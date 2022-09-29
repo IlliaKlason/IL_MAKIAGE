@@ -7,7 +7,7 @@ body {
   font-size: 14px;
   min-width: 320px;
   position: relative;
-  font-family: "Arial", sans-serif;
+  font-family: 'Arial', sans-serif;
   overflow: hidden;
   opacity: 1;
   color: #5f6368;
@@ -67,10 +67,10 @@ a {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 #wrapper .main_search > .field::before {
-  content: "";
+  content: '';
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/img/search.svg");
+  background-image: url('/img/search.svg');
   width: 20px;
   height: 20px;
   opacity: 0.3;
